@@ -1,0 +1,248 @@
+
+*{
+    font-family:'Roboto';
+}
+
+body{
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 700;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+header{
+    background:#fff;
+    border: 1px solid #ccc;
+}
+.row{
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+.btn-primary{
+    background: #f2a340 !important;
+    border: 2px solid #c28008 !important;
+}
+.btn-primary:hover{
+    background:#c28008 !important;
+    border-color: #c28008 !important;
+}
+/****** estilo da msg da session de erro ******/
+.msg{
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+/*****navbar ****/
+
+#navbar img{
+    width:40px;
+}
+#navbar{
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+}
+#navbar a{
+    font-size: 14px;
+    color:#757575;
+}
+#navbar a:hover{
+    color:#F2A340;
+}
+/*** search container *****/
+
+#search-container{
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position:center ;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+#search-container h1{
+    color: #F2A340;
+    margin-bottom: 30px;
+    font-weight: 900;
+
+}
+#search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
+/****** Events List ******/
+
+#events-container{
+    padding: 50px;
+}
+#events-container h2{
+    margin-bottom: 10px;
+}
+#events-container .subtitle{color: #757575; margin-bottom: 30px;}
+
+#cards-container{
+    display: flex;
+}
+#events-container .card{flex: 1 1 24%; max-width:20%; border-radius: 10px; padding: 0; margin:2%;}
+
+#events-container img{max-height: 150px; border-top-left-radius:10px;border-top-right-radius:10px;}
+
+.card-date{font-size: 12px; color: #ccc;}
+
+.card-title{color: #212121;font-size: 20px;font-weight: bold;margin-bottom: 30px;}
+
+.card-participants{font-size: 14px;color: #757575;}
+/******Event create page ******/
+
+#event-create-container{
+    padding:5px;
+}
+#event-create-container label{
+    font-weight: bold;
+}
+#event-create-container input, #event-create-container select, #event-create-container textarea{font-size: 12px; width:100%;}
+
+/*******divisao do contentor principal da pagina criar evento em duas partes e img e form******/
+
+.contentor{
+width: 90%;
+height: auto;
+display: flex;
+box-shadow: 5px 5px 10px rgba(0,0,0,0.212);
+margin-top: 2%;
+box-sizing: border-box;
+}
+.form-image{
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #fde3a7d7;*/
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.form-image img{
+    width:31rem;
+}
+
+.form-image h3{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top:0;
+    right: -70%;
+    top: -40%;
+    padding: 10px;
+}
+
+.contentor .form{
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+.form-group input{
+    display:flex;
+    width: 45%;
+    height: 4vh;
+    margin: 1rem 0;
+    padding:0.8rem 1.2rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    outline: none;
+}
+
+.form-group input:hover{
+    
+    background: #eeeeee75;
+    border-bottom: 1px solid #6c63ff;
+}
+.form-group input:focus-visible{
+    outline: none;
+}
+#image
+{
+    clear: both !important;
+    outline: none;
+    border: none;
+}
+
+#image:hover
+{
+    clear: both !important;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    column-span: all;
+}
+@media (max-width:600px) {
+    /******** formulario criar evento na tela de telemovel *****/
+    .contentor .form-image{
+        display: none;
+    }
+    .contentor{
+        width: 90%;
+        background-image: url(../img/imgContacto.svg);
+        background-size:cover;
+        background-color: rgba(0,0,0,0.212);
+        background-position: center;
+    }
+    .contentor .form{
+        width: 100% !important;
+    }
+}
+/**** Event page****/
+
+#image-container,#info-container{margin-top: 30px;}
+
+#image-container img{border-radius: 10px;}
+
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+    
+}
+#info-container p{
+    margin: 0;
+    font-size: 14x;
+    display: flex;
+}
+#info-container h3,
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+#info-container ion-ion{
+    font-size: 20px;
+    color: #F2A340;
+    margin-right: 5px;
+}
+#info-container #event-submit{
+    margin: 20px 0;
+}
+
+/***** footer *****/
+footer{
+    text-align: center;
+    background: #353E48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin-bottom: 0;
+}
